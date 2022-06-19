@@ -16,12 +16,8 @@ url = "mongodb+srv://admin:admin@cluster0.kdyeb.mongodb.net/?retryWrites=true&w=
 client = MongoClient(url)
 
 # connect pytech database
-db = client.pytech
-
-# get the students collection 
-students = db.students
-
-# find all students in the collection 
+db = client.pytech 
+students = db.students 
 student_list = students.find({})
 
 # display message 
