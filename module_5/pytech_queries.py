@@ -6,7 +6,7 @@ Professor Sampson
 Description: Test program for querying student collection
 """
 
-""" import statements """
+# import statements 
 from pymongo import MongoClient
 
 # MongoDB connection string 
