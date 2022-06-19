@@ -120,3 +120,6 @@ print(f'Inserted student record {alyssum["first_name"]} {alyssum["last_name"]} i
 
 hannah_student_id = students.insert_one(hannah).inserted_id
 print(f'Inserted student record {hannah["first_name"]} {hannah["last_name"]} into the students collection with document_id {hannah_student_id}')
+
+# exit message 
+input("\n\n  End of program, press any key to continue...")
