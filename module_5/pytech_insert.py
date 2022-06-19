@@ -108,7 +108,7 @@ hannah = {
 
 # get the students collection and make a list of students
 students = db.students
-students_list = [mason, alyssum, hannah]
+
 
 # insert statements and output 
 print("\n  -- INSERT STATEMENTS --")

@@ -19,13 +19,13 @@ client = MongoClient(url)
 db = client.pytech 
 
 students = db.students 
-student_list = students.find({})
+student_docs = db.students.find({})
 
 # print header
 print("\n  -- DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY --")
 
 # loop through collection and print results 
-for doc in student_list:
+for doc in student_docs:
     print("  Student ID: " + doc["student_id"] + "\n  First Name: " + doc["first_name"] + "\n  Last Name: " + doc["last_name"] + "\n")
 
 # find document by student_id
