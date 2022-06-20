@@ -17,6 +17,7 @@ client = MongoClient(url)
 
 # connect pytech database
 db = client.pytech
+students = db.students
 
 # student documents
 mason = {
@@ -106,8 +107,7 @@ hannah = {
     ]
 }
 
-# get the students collection and make a list of students
-students = db.students
+
 
 
 # insert statements and output 
