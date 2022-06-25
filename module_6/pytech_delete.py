@@ -7,13 +7,13 @@ Description: Test program for deleting documents in Pytech database
 """
 
 # import statements
-from pymongo import MongoClient #pymongo lets us interface with MongoDB
+from pymongo import MongoClient 
 
 # MongoDB connection string 
-url = "mongodb+srv://admin:admin@cluster0.lazzm.mongodb.net/pytech"
+url = "mongodb+srv://admin:admin@cluster0.kdyeb.mongodb.net/?retryWrites=true&w=majority"
 
 # connect to the MongoDB cluster 
-client = MongoClient(url) #turns our connection string into a client we can interface
+client = MongoClient(url) 
 
 # connect pytech database
 db = client.pytech
