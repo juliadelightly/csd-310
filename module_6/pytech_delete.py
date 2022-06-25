@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """ 
 Assignment: pytech_delete.py
 Julia Delightly
@@ -61,3 +62,6 @@ for doc in new_student_list:
 
 # exit message 
 input("\n\n  End of program, press any key to continue...")
+=======
+
+>>>>>>> 746522b67e792ef7aa05f96a8c375ffe802cfbfa
