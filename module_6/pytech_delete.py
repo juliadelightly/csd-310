@@ -52,6 +52,7 @@ deleted_student_temp_doc = students.delete_one({"student_id": "1010"})
 # find all students in collection 
 new_student_list = students.find({})
 
+
 print("\n  -- DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY --")
 
 # loop through collection and output results 
