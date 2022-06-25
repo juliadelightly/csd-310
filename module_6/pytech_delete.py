@@ -39,15 +39,6 @@ temp_doc_id = students.insert_one(temp_doc).inserted_id
 print("\n  -- INSERT STATEMENTS --")
 print("  Inserted student record " + temp_doc["student_id"] + " into the students collection with document_id " + str(temp_doc_id))
 
-'''
-# call find_one() method by student_id 1010
-student_temp_doc = students.find_one({"student_id": "1010"})
-
-# display results 
-print("\n  -- DISPLAYING STUDENT TEST DOC -- ")
-print("  Student ID: " + student_temp_doc["student_id"] + "\n  First Name: " + student_temp_doc["first_name"] + "\n  Last Name: " + student_temp_doc["last_name"] + "\n")
-'''
-
 # find all students in updated collection 
 new_student_list = students.find({})
 
