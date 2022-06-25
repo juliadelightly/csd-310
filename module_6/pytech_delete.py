@@ -37,23 +37,32 @@ temp_doc = {
 temp_doc_id = students.insert_one(temp_doc).inserted_id
 
 print("\n  -- INSERT STATEMENTS --")
-print("  Inserted student record into the students collection with document_id " + str(temp_doc_id))
+print("  Inserted student record " + temp_doc["student_id"] + " into the students collection with document_id " + str(temp_doc_id))
 
+'''
 # call find_one() method by student_id 1010
 student_temp_doc = students.find_one({"student_id": "1010"})
 
 # display results 
 print("\n  -- DISPLAYING STUDENT TEST DOC -- ")
 print("  Student ID: " + student_temp_doc["student_id"] + "\n  First Name: " + student_temp_doc["first_name"] + "\n  Last Name: " + student_temp_doc["last_name"] + "\n")
+'''
+
+# find all students in updated collection 
+new_student_list = students.find({})
+
+print("\n  -- DISPLAYING NEW STUDENT LIST DOC -- ")
+# loop through updated collection with the new student doc and output results 
+for doc in new_student_list: 
+    print("  Student ID: " + doc["student_id"] + "\n  First Name: " + doc["first_name"] + "\n  Last Name: " + doc["last_name"] + "\n")
 
 # call delete_one method to remove student_temp_doc
 deleted_student_temp_doc = students.delete_one({"student_id": "1010"})
 
-# find all students in collection 
+# find all students in collection with student_temp_doc now deleted
 new_student_list = students.find({})
 
-
-print("\n  -- DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY --")
+print("\n  -- DELETED STUDENT ID: 1010 --")
 
 # loop through collection and output results 
 for doc in new_student_list: 
