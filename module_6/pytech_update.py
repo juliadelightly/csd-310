@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """ 
 Assignment: pytech_update.py
 Julia Delightly
@@ -40,6 +39,3 @@ print("  Student ID: " + mason["student_id"] + "\n  First Name: " + mason["first
 
 # exit message 
 input("\n\n  End of program, press any key to continue...")
-=======
-
->>>>>>> 746522b67e792ef7aa05f96a8c375ffe802cfbfa
