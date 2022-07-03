@@ -2,7 +2,7 @@
 Assignment: mysql_test.py
 Julia Delightly
 Professor Sampson
-26 June 2022
+3 July 2022
 Description: Test program for connecting a python program to SQL
 """
 import mysql.connector
