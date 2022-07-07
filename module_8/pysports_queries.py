@@ -64,5 +64,4 @@ for player in players:
 input("\n\nPress any key to continue...")
 
 
-
 db.close()
