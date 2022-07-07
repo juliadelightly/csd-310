@@ -21,6 +21,9 @@ try:
     db = mysql.connector.connect(**config)
     cursor = db.cursor()
 
+    # delete any existing versions of Smeagol from running this program with the update file more than once 
+    cursor.execute("DELETE FROM player WHERE first_name = 'Smeagol';")
+
     # inner join query to return matching records
     cursor.execute("SELECT player_id, first_name, last_name, team_name FROM player INNER JOIN team ON player.team_id = team.team_id")
     players = cursor.fetchall()
