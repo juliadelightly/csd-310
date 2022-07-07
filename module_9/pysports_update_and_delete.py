@@ -19,7 +19,7 @@ config = {
 def show_players(cursor, title):
 
     # inner join query 
-    cursor.execute("SELECT player_id, first_name, last_name, team_name FROM player INNER JOIN team ON player.team_id = team.team_id")
+    cursor.execute("SELECT player_id, first_name, last_name, team_name FROM player INNER JOIN team ON player.team_id = team.team_id ORDER BY player_id, first_name, last_name, team_name DESC")
     players = cursor.fetchall()
 
     print("\n  -- {} --".format(title))
