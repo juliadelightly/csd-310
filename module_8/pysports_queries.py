@@ -61,6 +61,7 @@ for player in players:
     print("Team ID: {}".format(player[3]))
     print()
 
+
 input("\n\nPress any key to continue...")
 
 
