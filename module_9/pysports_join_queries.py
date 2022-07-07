@@ -29,7 +29,11 @@ try:
     
     # iterate over player data set and display results 
     for player in players:
-        print("  Player ID: {}\n  First Name: {}\n  Last Name: {}\n  Team Name: {}\n".format(player[0], player[1], player[2], player[3]))
+        print("Player ID: {}".format(player[0]))
+        print("First Name: {}".format(player[1]))
+        print("Last Name: {}".format(player[2]))
+        print("Team Name: {}".format(player[3]))
+        print()
 
     input("\n\n  Press any key to continue... ")
 

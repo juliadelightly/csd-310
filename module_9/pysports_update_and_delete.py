@@ -29,7 +29,7 @@ except mysql.connector.Error as err:
     else:
         print(err)
 
-# create a cursor
+# create cursor
 cursor = db.cursor()
 
 # delete any existing versions of Smeagol from running this program more than once 
@@ -63,7 +63,6 @@ players = cursor.fetchall()
 
 print()
 print("-- DISPLAYING PLAYERS AFTER UPDATE --")
-
 
 for player in players:
     print("Player ID: {}".format(player[0]))
