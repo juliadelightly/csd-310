@@ -2,7 +2,7 @@
 Assignment: pysports_join_queries.py
 Julia Delightly
 Professor Sampson
-3 July 2022
+10 July 2022
 Description: Test program to join the player and team tables
 """
 import mysql.connector
@@ -19,7 +19,6 @@ config = {
 try:
 
     db = mysql.connector.connect(**config)
-
     cursor = db.cursor()
 
     # inner join query to return matching records
