@@ -48,5 +48,11 @@ def printTable(results,cursor):
 cursor.execute("SELECT wine.name, distributor.units, distributor.distributor_name FROM wine INNER JOIN distributor ON wine.upc = distributor.upc ORDER BY units DESC;")
 
 response = cursor.fetchall()
-print("Wine sales by units:")
+print("Wine sales by distributor:")
+printTable(response,cursor)
+
+cursor.execute()
+
+response = cursor.fetchall()
+print("Wine sales by total units:")
 printTable(response,cursor)

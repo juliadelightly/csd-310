@@ -185,5 +185,5 @@ for distributor in distributors:
     print("Distributor_Name: {}".format(distributor[2]))
     print("Pickup_Time: {}".format(distributor[3]))
     print("UPC: {}".format(distributor[4]))
-    print("UPC: {}".format(distributor[5]))
+    print("Units: {}".format(distributor[5]))
     print("\n")
