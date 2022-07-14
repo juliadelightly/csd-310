@@ -1,3 +1,11 @@
+""" 
+Assignment: winery_database.py
+Green Team: Kendrick Baker, Julia Delightly, Elizabeth Fung, Christopher Morales, Abigail Sabelhaus
+Professor Sampson
+10 July 2022
+Description: Bacchus Winery Case Study Database
+"""
+
 import mysql.connector
 
 mydb = mysql.connector.connect(
