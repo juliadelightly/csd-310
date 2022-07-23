@@ -7,6 +7,17 @@ Description: Bacchus Winery Case Study Database Reports
 """
 
 import mysql.connector
+from datetime import datetime
+
+#print date for when reports were run 
+print()
+now = datetime.now() # current date and time
+date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
+print("Report run on: ",date_time)
+print()
+print()
+
+
 
 mydb = mysql.connector.connect(
   host="127.0.0.1",
@@ -14,9 +25,6 @@ mydb = mysql.connector.connect(
   password="JKD@sql22!",
   database="winery"
 )
-
-
-
 
 
 
